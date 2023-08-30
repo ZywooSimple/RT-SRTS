@@ -18,6 +18,7 @@ The URE module is shown below.
 
 
 ## Install
+CUDA Runtime API  -- v9.1
 ```sh
 $ git clone https://github.com/ZywooSimple/RT-SRTS.git
 $ cd RT-SRTS
