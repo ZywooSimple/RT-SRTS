@@ -39,7 +39,6 @@ We saved each real 3DCT and corresponding real tumor label into the h5py file an
 |--ct_rtk
 |  |--1_rtk.mha
 |  |--2_rtk.mha
-|  |--3_rtk.mha
    ·········
 ```
 The reason why we create subfiles under h5py instead of listing all files directly: the generated DRR image will be saved under this path.
