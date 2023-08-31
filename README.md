@@ -26,7 +26,7 @@ $ conda activate RT-SRTS
 ```
 
 ## 💾 Data
-The geometry file is used for the RTK to generate DRR image at a certain angle.
+The geometry file is used for the RTK to generate DRR image at a certain angle.The dataset is divided into 3 parts by the TXT file.
 
 We saved each real 3DCT and corresponding real tumor label into the h5py file and put it into a separate folder according to the 1080 time phase. The structure is as follows:
 ```sh
