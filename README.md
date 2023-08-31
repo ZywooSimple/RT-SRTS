@@ -5,7 +5,7 @@ The Reconstruction Toolkit (RTK) is an open source cross-platform software for r
 
 We use RTK to obtain DRR images from CT images at a certain angle. If you can't properly use the RTK, I recommend that you look through the RTK official website.[RTK - Reconstruction Toolkit (openrtk.org)](https://www.openrtk.org/)
 
-## Introduction
+## ✏️ Introduction
 Our network is structured as follows.
 For more details, please read the paper.
 ![image](network.png)
@@ -17,8 +17,7 @@ The URE module is shown below.
 ![image2](URE.png)
 
 
-## Install
-CUDA Runtime API  -- v9.1
+## ⚙️ Install
 ```sh
 $ git clone https://github.com/ZywooSimple/RT-SRTS.git
 $ cd RT-SRTS
@@ -26,7 +25,9 @@ $ conda env create -f environment.yaml
 $ conda activate RT-SRTS
 ```
 
-## Data
+## 💾 Data
+The geometry file is used for the RTK to generate DRR image at a certain angle.
+
 We saved each real 3DCT and corresponding real tumor label into the h5py file and put it into a separate folder according to the 1080 time phase. The structure is as follows:
 ```sh
 |--h5py
@@ -46,21 +47,24 @@ The reason why we create subfiles under h5py instead of listing all files direct
 We give an instance in the "example" floder.
 
 
-
-
-## Train & Test
+## ⏳Train & Test
 To train our model, run:
 ```python 
 $ python RT-SRTS/train.py
 ```
-
+For the details in ".py" file：the “--exp” represents patient case name, “--date” represents the model name, "--experiment_path" represents the output root directory, 
 To test our model, run :
 ```python 
 $ python RT-SRTS/test.py
 ```
 
-## Result
+## 📊 Result
 ![result1](result1.png)
 
 ![result2](result2.png)
 
+## Contact
+If you have any questions, please feel free to contact <bo.liu@buaa.edu.cn>.
+
+## Acknowledgement
+Our code is based on the implementation of PatRecon. We thank PatRecon's authors for their work and repository.
